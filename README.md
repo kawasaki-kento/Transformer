@@ -27,7 +27,7 @@
  - GPUもしくはTPUを使う際に、次のようにハードウェア アクセラレータを選択してください
  - GPU：ランタイム → ランタイムの変更 → ハードウェア アクセラレータ → GPU
  - TPU：ランタイム → ランタイムの変更 → ハードウェア アクセラレータ → TPU
- ![hardware_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/hardware_1.png)
+ ![hardware_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/hardware_1.png)  
  ![hardware_2](https://github.com/kawasaki-kento/Transformer/blob/master/image/hardware_2.png)
 
  ## 使用データ
@@ -37,7 +37,7 @@
  
  ## ドライブのマウント
  - Googleドライブを使用するため、次のようにドライブのマウントを行ってください
- ![mount_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/mount_1.png)
+ ![mount_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/mount_1.png)  
  ![mount_2](https://github.com/kawasaki-kento/Transformer/blob/master/image/mount_2.png)
  
  ## データの読み込み
