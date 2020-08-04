@@ -21,24 +21,30 @@
  ## 実行環境
  - Google Colaboratory上で実行するため、Googleアカウントを持っている必要があります
  - 本ファイルをGoogleドライブにアップロードしてください
- ![gdrive](https://github.com/kawasaki-kento/Transformer/blob/master/image/drive_1.png)
+ ![drive_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/drive_1.png)
 
  ## ハードウェア アクセラレータの選択
  - GPUもしくはTPUを使う際に、次のようにハードウェア アクセラレータを選択してください
  - GPU：ランタイム → ランタイムの変更 → ハードウェア アクセラレータ → GPU
  - TPU：ランタイム → ランタイムの変更 → ハードウェア アクセラレータ → TPU
+ ![hardware_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/hardware_1.png)
+ ![hardware_2](https://github.com/kawasaki-kento/Transformer/blob/master/image/hardware_2.png)
 
  ## 使用データ
  - http://www.manythings.org/anki/の日英翻訳コーパスを使用します
  - このデータは、CC-BY 2.0 (France)に従い、各文の属性欄に帰属者の記載があります
-
+ ![download_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/download_1.png)
+ 
  ## ドライブのマウント
  - Googleドライブを使用するため、次のようにドライブのマウントを行ってください
-
+ ![mount_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/mount_1.png)
+ ![mount_2](https://github.com/kawasaki-kento/Transformer/blob/master/image/mount_2.png)
+ 
  ## データの読み込み
  - データ件数は約5.3万件、その内、約5万件を学習、約3千件をテスト用のデータとしています
  - 学習とテストの割合はsplit_percentで調整できます
  - 以下のように、パラレルコーパスになっていることを確認してください
+ ![load_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/load_1.png)
 
  ## 前処理
  - 前処理は以下の図のように、文章をベクトルに変換しています
