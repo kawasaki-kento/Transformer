@@ -21,6 +21,7 @@
  ## 実行環境
  - Google Colaboratory上で実行するため、Googleアカウントを持っている必要があります
  - 本ファイルをGoogleドライブにアップロードしてください
+ ![gdrive](https://github.com/kawasaki-kento/Transformer/blob/master/image/drive_1.png)
 
  ## ハードウェア アクセラレータの選択
  - GPUもしくはTPUを使う際に、次のようにハードウェア アクセラレータを選択してください
