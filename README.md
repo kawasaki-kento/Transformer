@@ -1,6 +1,11 @@
 # 概要
  - Transformerを用いて日英翻訳を行う
 
+# requirements
+ - python >= 3.6
+ - tensorflow >= 2.0
+ - mecab-python3==0.6
+
 # ファイルの説明
  ## ノートブック
  - Train_on_GPU.ipynb：GPUによる学習
@@ -52,6 +57,7 @@
  - 前処理は以下の図のように、文章をベクトルに変換しています
  - その際、文章の先頭に<start>、後尾に<end>を追加しています
  - また、不明な単語の場合は<unk>が割り当てられるようになっています
+ ![preprocess_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/preprocess_1.png)
 
  ## ハイパーパラメータの設定
  - num_layers：内部レイヤー数
@@ -86,10 +92,5 @@
  ## Attention Weight の見方
  - 横軸が入力文、翻訳元の文章、縦軸が翻訳後の文になっています
  - 色が明るいほど、単語間の関係性が強いことを意味します
- - 例えば以下の図の場合、・・・
-  
-
-# requirements
- - python >= 3.6
- - tensorflow >= 2.0
- - mecab-python3==0.6
+ - 例えば以下の図の場合、「This」と「この」の関係が強く出ていることがわかります
+ ![attention_weight_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/attention_weight_1.PNG)
