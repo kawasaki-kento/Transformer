@@ -59,20 +59,25 @@
  - num_heads：Multi Head Attentionのヘッド数
  - dff=2048：Feed Forward Networkのユニット数
  - dropout_rate：ドロップアウト率
+ ![parameter_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/parameter_1.PNG)
 
  ## モデルの保存・読み込みについて
  - モデルの保存・読み込みは、本来GCSを使うべきですが、このコードではGoogleドライブで行っています
  - checkpoint_path = "/content/drive/My Drive/Transformer/checkpoints/gpu/model"と読み込み先の指定ができます
  - そのため、学習時もしくは予測時、以下のことに注意してください
  	 - 「Load checkpoints successfully.」となれば、学習済みモデルが読み込めています
+   ![checkpoint_3](https://github.com/kawasaki-kento/Transformer/blob/master/image/checkpoint_3.PNG)
  	 - 「*** Failed to load model weights ***」、「*** Failed to load optimizer weights ***」となれば、学習済みモデルが読み込めていませんので、ランタイムを再起動してやり直してください
+   ![checkpoint_2](https://github.com/kawasaki-kento/Transformer/blob/master/image/checkpoint_2.PNG)
  	 - 「No available checkpoints.」となれば、学習済みモデルがないので、そのまま学習を実行してモデルを作成してください
+   ![checkpoint_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/checkpoint_1.PNG)
 
 
  ## 学習
  - EPOCHSを設定して実行してください
  - 50バッチごとに、学習の進捗が表示されます
  - また、5Epochごとにモデルが保存されます
+ ![train_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/train_1.PNG)
 
  ## 推論
  - テストデータを用いて推論を行います
