@@ -37,7 +37,7 @@
  ![hardware_2](https://github.com/kawasaki-kento/Transformer/blob/master/image/hardware_2.png)
 
  ## 使用データ
- - http://www.manythings.org/anki/の日英翻訳コーパスを使用します
+ - http://www.manythings.org/anki/ の日英翻訳コーパスを使用します
  - このデータは、CC-BY 2.0 (France)に従い、各文の属性欄に帰属者の記載があります
  ![download_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/download_1.png)
  
@@ -55,8 +55,8 @@
 
  ## 前処理
  - 前処理は以下の図のように、文章をベクトルに変換しています
- - その際、文章の先頭に<start>、後尾に<end>を追加しています
- - また、不明な単語の場合は<unk>が割り当てられるようになっています
+ - その際、文章の先頭に\<start\>、後尾に\<end\>を追加しています
+ - また、不明な単語の場合は\<unk\>が割り当てられるようになっています
  ![preprocess_1](https://github.com/kawasaki-kento/Transformer/blob/master/image/preprocess_1.png)
 
  ## ハイパーパラメータの設定
