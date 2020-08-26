@@ -10,18 +10,22 @@ class CreateData(object):
     self.index = None
     self.source_data = None
     self.target_data = None
+    self.licence = None
 
   def read_data(self):
     source_data = []
     target_data = []
+    licence = []
     with open(self.corpus_path, 'r', encoding='utf-8') as f:
       for row in f:
         source_data.append(row.split('\t')[0])
         target_data.append(row.split('\t')[1])
+        licence.append(row.split('\t')[2])
 
     self.index = list(range(len(source_data)))
     self.source_data = source_data
     self.target_data = target_data
+    self.licence = licence
 
   def shuffle_data(self):
     random.seed(self.seed_value)
@@ -38,10 +42,12 @@ class CreateData(object):
 
     train_source = [self.source_data[i] for i in train_index]
     train_target = [self.target_data[i] for i in train_index]
+    train_licence = [self.licence[i] for i in train_index]
     test_source = [self.source_data[i] for i in test_index]
     test_target = [self.target_data[i] for i in test_index]
+    test_licence = [self.licence[i] for i in test_index]
 
-    return train_source, train_target, test_source, test_target
+    return train_source, train_target, test_source, test_target, train_licence, test_licence
     
     
 class PreprocessData(object):
