@@ -1,5 +1,6 @@
 # 概要
  - Transformerを用いて日英翻訳を行う
+ - このリポジトリはPyConJP2020でのハンズオンセッションで使用するものになります
 
 # requirements
  - python >= 3.6
